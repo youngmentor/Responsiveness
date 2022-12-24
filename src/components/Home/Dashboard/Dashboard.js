@@ -1,53 +1,53 @@
 import React from 'react'
 import './Dashboard.css'
 import './Card.css'
-import Header from '../Header/Header'
+// import Header from '../Header/Header'
 import Card from './Card'
 import { MdViewStream } from "react-icons/md";
 import { FaFantasyFlightGames } from "react-icons/fa";
 import { GiConsoleController } from "react-icons/gi";
 import { VscLibrary } from "react-icons/vsc";
 import { BsSearch } from "react-icons/bs";
-// import Image from './Image.jpeg'
+// import Imag from './Image.jpeg'
 import Controle from './Controle.png'
 import Image from './Image1.jpg'
 import Suliton from './Image.jpg'
 import Spider from './Image2.jpg'
 import Sack from './Image3.jpg'
-// import Controle from './image.jpg'
 function Dashboard() {
-    const style={
-        borderRadius:50
+    const style = {
+        borderRadius: 50
     }
-    const Profile = (<div className='Profile_Menu'>
-        <div className='Profile1'>
-            <div className='Profile_imgCont' >
-                <img src={Image} />
-                {/* <h4>Oparah Nkume</h4> */}
-                <h4>Suliton</h4>
-                <p>Sen Dev</p>
+    const Profile = (
+        <div className='Profile_Menu'>
+            <div className='Profile1'>
+                <div className='Profile_imgCont' >
+                    <img src={Image} />
+                    {/* <h4>Oparah Nkume</h4> */}
+                    <h4>Suliton</h4>
+                    <p>Sen Dev</p>
+                </div>
+
+                <div className='Profile_icons'>
+                    <div className='iconsDiv'><MdViewStream className='icons' /><p>Streams</p></div>
+                    <div className='iconsDiv'><FaFantasyFlightGames className='icons' /><p>Games</p></div>
+                    <div className='iconsDiv P'><GiConsoleController className='icons' /><p>Upcoming</p></div>
+                    <div className='iconsDiv'><VscLibrary className='icons' /><p>Library</p></div>
+                </div>
+                <div className='Profile_footer'>
+                    <h4>join pro <br />for free <br />games.</h4>
+                    <img src={Controle} />
+                </div>
             </div>
 
-            <div className='Profile_icons'>
-                <div className='iconsDiv'><MdViewStream className='icons' /><p>Streams</p></div>
-                <div className='iconsDiv'><FaFantasyFlightGames className='icons' /><p>Games</p></div>
-                <div className='iconsDiv P'><GiConsoleController className='icons' /><p>Upcoming</p></div>
-                <div className='iconsDiv'><VscLibrary className='icons' /><p>Library</p></div>
-            </div>
-            <div className='Profile_footer'>
-                <h4>join pro <br />for free <br />games.</h4>
-                <img src={Controle} />
-            </div>
-        </div>
-
-    </div>)
+        </div>)
 
     const progress1 = (<div className='progress'><p></p></div>)
     const progress2 = (<div className='progress1'><p></p></div>)
     const progress3 = (<div className='progress2'><p></p></div>)
     return (
         <>
-            <Header Profile={Profile} />
+            {/* <Header Profile={Profile} /> */}
             <div className='Dash_Main'>
                 <div className='Dash_Contain'>
                     <div className='Profile'>
@@ -56,8 +56,8 @@ function Dashboard() {
                                 <img src={Suliton} />
                                 {/* <h4>Oparah Nkume</h4>
                                 <p>CEO</p> */}
-                                 <h4>suliton</h4>
-                <p>sen Dev</p>
+                                <h4>suliton</h4>
+                                <p>sen Dev</p>
                             </div>
 
                             <div className='Profile_icons'>

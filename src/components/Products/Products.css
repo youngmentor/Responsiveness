@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Product_Container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.Product_Wrapper{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Prod_Card{
+    width: 300px;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+@media screen and (max-width: 425px){
+    .Prod_Card{
+        width:85%;
+    }
+}
+.Img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.ProductName{
+    width: 100%;
+    margin-left: 10px;
+}
+
+.Desc_Contain{
+    width: 100%;
+    margin-left: 10px;
+}
+
+.Done_Prod{
+    width: 90%;
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
